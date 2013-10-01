@@ -1,0 +1,41 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+
+.topbar-image {
+	background-color: #232323;
+	width: 100%;
+	height: 40px;
+}
+.affix {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+.affix-top {
+	position: absolute;
+}
+.bars {
+	background-color: #565656;
+	width:100%;
+	height:10px;
+}
+.mainbody {
+	margin-left: 300px;
+	width: 777px;
+}
+
+#navi{
+	background-color: #afafaf;
+	width: 200px;
+}
+
+#navi a {
+	color: #000000;
+	text-decoration: none;
+}
+#navi a:hover {
+	color: #121212;
+	text-decoration: none;
+}
