@@ -4,13 +4,13 @@ function show(event) {
 	} else {
 		event.preventDefault();
 		var currenthash = $(this).attr("href");
-		$(".mainbody").slideUp(300).delay(600);
+		$(".mainbody").fadeOut(100).delay(100);
 		window.location = currenthash;
 		$(".navbtn").removeClass("disabled");
 		if ($(this).parent().hasClass("navbtn")) {
 			$(this).parent().addClass("disabled");
 		}
-		$(currenthash).show();
+		$(currenthash).fadeIn();
 	}
 }
 
