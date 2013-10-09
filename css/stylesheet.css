@@ -39,3 +39,13 @@ html, body{
 	color: #121212;
 	text-decoration: none;
 }
+.carousel {
+	margin: 50px;
+}
+.dropdown-menu>li>a{
+	padding: 8px 20px !important;
+}
+.blackcaret{
+	border-top-color: #000 !important;
+	border-bottom-color: #000 !important;
+}
