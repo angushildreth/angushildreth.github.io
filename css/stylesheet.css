@@ -22,8 +22,8 @@ html, body{
 	height:10px;
 }
 .mainbody {
-	margin-left: 300px;
-	width: 777px;
+	width: 888px;
+	
 }
 
 #navi{
@@ -48,4 +48,17 @@ html, body{
 .blackcaret{
 	border-top-color: #000 !important;
 	border-bottom-color: #000 !important;
+}
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+.thumbnail.right-caption {
+    float: left;
+}
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+.profilepic {
+	height: 300px !important;
 }

@@ -23,19 +23,29 @@ function showCollab(event) {
 		$(".navbtn").removeClass("disabled");
 		$(this).parent().addClass("disabled");
 		window.location = currenthash;
-		$('body').scrollTo($(window.location.hash));
 	}
 	else {
-		$(".navbtn").removeClass("disabled");
 		event.preventDefault();
+		$(".navbtn").removeClass("disabled");
 		$(".mainbody").fadeOut(100).delay(100);
 		$("#collab").show();
 		if ($(this).parent().hasClass("navbtn")) {
 			$(this).parent().addClass("disabled");
 		}
-		window.location = currenthash;
-		$('body').scrollTo($(window.location.hash));
+    	window.location.hash = currenthash
+    	scrollToElement(currenthash);
 	}
+}
+
+function scrollToElement(selector, time, verticalOffset) {
+    time = typeof(time) != 'undefined' ? time : 1000;
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $(selector);
+    offset = element.offset();
+    offsetTop = offset.top + verticalOffset - 650;
+    $('html, body').animate({
+        scrollTop: offsetTop
+    }, time);
 }
 
 $.fn.scrollTo = function( target, options, callback ){
