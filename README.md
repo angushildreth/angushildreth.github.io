@@ -1,2 +1,3 @@
-#Webpage for Angus Hildreth
-## Work in progress
+# Webpage for Angus Hildreth
+## Built using Bootstrap Framework
+## Currently under construction
