@@ -32,7 +32,7 @@ html, body{
 .jumbotron:after {
   content:"";
   /*background: url("http://lorempixel.com/1000/200") no-repeat;*/
-  background: url("../resources/jumbotron:.jpg") no-repeat;
+  background: url("../resources/jumbotron.png") no-repeat;
   background-size: 100% auto;
   opacity: .5;
   top: 0;
