@@ -11,6 +11,7 @@ function show(event) {
 			$(this).parent().addClass("disabled");
 		}
 		$(currenthash).fadeIn();
+		scroll(0,0);
 	}
 }
 
@@ -25,15 +26,12 @@ function showCollab(event) {
 		window.location = currenthash;
 	}
 	else {
-		event.preventDefault();
 		$(".navbtn").removeClass("disabled");
 		$(".mainbody").fadeOut(100).delay(100);
 		$("#collab").show();
 		if ($(this).parent().hasClass("navbtn")) {
 			$(this).parent().addClass("disabled");
 		}
-    	window.location.hash = currenthash
-    	scrollToElement(currenthash);
 	}
 }
 
@@ -42,7 +40,7 @@ function scrollToElement(selector, time, verticalOffset) {
     verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
     element = $(selector);
     offset = element.offset();
-    offsetTop = offset.top + verticalOffset - 650;
+    offsetTop = offset.top + verticalOffset;
     $('html, body').animate({
         scrollTop: offsetTop
     }, time);
@@ -89,6 +87,6 @@ $(document).ready(function(){
 	$(".collabbutton").on("click", showCollab);
 
 	if (window.location.hash =="#resume") {
-		window.location = "resources/Resume.pdf";
+		window.location = "resources/angus_hildreth_cv.pdf";
 	}
 });
