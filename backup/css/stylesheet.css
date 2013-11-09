@@ -1,0 +1,130 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+
+.topbar-image {
+	background-color: #232323;
+	width: 100%;
+	height: 40px;
+}
+.affix {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+.affix-top {
+	position: absolute;
+}
+.bars {
+	background-color: #565656;
+	width:100%;
+	height:10px;
+}
+.mainbody {
+	width: 888px;
+	
+}
+.jumbotron{
+  position: relative !important;
+  background: none !important;
+}
+.jumbotron:after {
+  content:"";
+  /*background: url("http://lorempixel.com/1000/200") no-repeat;*/
+  background: url("../resources/jumbotron.png") no-repeat;
+  background-size: 100% auto;
+  opacity: .5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+ }
+#navi{
+	background-color: #afafaf;
+	width: 200px;
+}
+
+#navi a {
+	color: #000000;
+	text-decoration: none;
+}
+#navi a:hover {
+	color: #121212;
+	text-decoration: none;
+}
+.carousel {
+	margin: 50px;
+}
+.dropdown-menu>li>a{
+	padding: 8px 20px !important;
+}
+.blackcaret{
+	border-top-color: #000 !important;
+	border-bottom-color: #000 !important;
+}
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+.thumbnail.right-caption {
+    float: left;
+}
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+.profilepic {
+	height: 300px !important;
+}
+}
+#navi{
+	background-color: #afafaf;
+	width: 200px;
+}
+a:hover{
+	text-decoration: none !important;
+}
+#navi a {
+	color: #000000;
+	text-decoration: none;
+}
+#navi a:hover {
+	color: #121212;
+	text-decoration: none;
+}
+.carousel {
+	margin: 50px;
+}
+.dropdown-menu>li>a{
+	padding: 8px 20px !important;
+}
+.blackcaret{
+	border-top-color: #000 !important;
+	border-bottom-color: #000 !important;
+}
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+.thumbnail.right-caption {
+    float: left;
+}
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+.profilepic {
+	height: 300px !important;
+}
+.facultyblock {
+	padding: 20px !important;
+}
+.facultyblock h3{
+	margin: 0px !important;
+	padding-bottom: 10px !important;
+}
+.facultyblock p, a{
+	margin: 0px !important;
+	padding-left: 25px;
+}
