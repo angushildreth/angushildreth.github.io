@@ -67,6 +67,8 @@ html, body{
 	position: absolute;
 	z-index: -1;
  }
+ .dropdown-menu>.disabled>a:hover,
+ .dropdown-menu>.disabled>a:focus,
 .nav > li.disabled>a:hover,
 .nav > li.disabled>a:focus {
 	cursor: default !important;
