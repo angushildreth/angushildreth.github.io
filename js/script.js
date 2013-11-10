@@ -15,11 +15,12 @@ function show(event) {
 	}
 }
 
-function showCollab(event) {
+function showLab(event) {
 	if ($(this).parent().hasClass("disabled")) {
 		return false;
 	}
 	var currenthash = $(this).attr("href");
+
 	if ($(this).parent().siblings().hasClass("disabled")) {
 		$(".navbtn").removeClass("disabled");
 		$(this).parent().addClass("disabled");
@@ -28,7 +29,7 @@ function showCollab(event) {
 	else {
 		$(".navbtn").removeClass("disabled");
 		$(".mainbody").fadeOut(100).delay(100);
-		$("#collab").show();
+		$("#lab").show();
 		if ($(this).parent().hasClass("navbtn")) {
 			$(this).parent().addClass("disabled");
 		}
@@ -74,8 +75,8 @@ $(document).ready(function(){
 	if (window.location.hash == "") {
 		$("#home").show();
 	}
-	else if (window.location.hash.indexOf("collab") > 0) {
-		$("#collab").fadeIn();
+	else if (window.location.hash.indexOf("lab") > 0) {
+		$("#lab").fadeIn();
 		$('body').scrollTo($(window.location.hash));
 	}
 	else{
@@ -84,7 +85,7 @@ $(document).ready(function(){
 	}
 
 
-	$(".collabbutton").on("click", showCollab);
+	$(".labbutton").on("click", showLab);
 
 	if (window.location.hash =="#resume") {
 		window.location = "resources/angus_hildreth_cv.pdf";

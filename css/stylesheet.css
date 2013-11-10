@@ -38,12 +38,20 @@ html, body{
 	position: absolute;
 }
 .mainbody {
-	width: 70% !important;
+	width: 60% !important;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 .mainbodyHome {
-	width: 888px !important;
+	width: 1050px !important;
+}
+.row {
+	width: 920px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+}
+.row .col-md-3 {
+	padding-left:0px !important;
 }
 .mainbody h1 {
 	margin-top:50px;
@@ -74,6 +82,9 @@ html, body{
 .nav > li.disabled>a:focus {
 	cursor: default !important;
 }
+.nav-tabs>li>a:hover {
+	border-color: #ccc #ccc #ddd !important;
+}
 .nav-tabs.nav-justified>li>a {
 	background-color: #fff !important;
 	border-radius: 0 !important;
@@ -97,7 +108,7 @@ a:hover{
 	border-top-color: #000 !important;
 	border-bottom-color: #000 !important;
 }
-#collab h2{
+#lab h2{
 	margin-top: 50px;
 }
 .thumbnail.right-caption > img {
