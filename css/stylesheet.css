@@ -2,9 +2,12 @@ html, body{
 	margin:0;
 	padding:0;
 }
+.container p{
+	font-size:15;
+}
 .title {
 	width: 70% !important;
-	height: 100px;
+	height: 150px;
 }
 .title h1{
 	text-decoration: underline;
@@ -62,7 +65,7 @@ html, body{
 	position: relative !important;
 	background: none !important;
 	margin: 0 !important;
-	height: 150px !important;
+	height: 175px !important;
 	padding: 0px !important;
 	width: 70% !important;
 	margin-left: auto !important;
