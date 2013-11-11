@@ -31,12 +31,22 @@
     <div data-spy="affix" data-offset-top="155" class="affix-top" id="navi">
     <ul class="nav nav-tabs nav-justified">
       <li class="navbtn"><a href="#home" id="homebutton">Home</a></li>
-      <li class="navbtn"><a href="#about" id="aboutbutton">About</a></li>
+
+      <li class="navbtn dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" id="aboutbutton" class="aboutbutton" href="#about">
+          About
+        </a>
+        <ul class="dropdown-menu">
+          <li class="navbtn"><a href="#aboutAngus" class="aboutbutton">Angus</a></li>
+          <li class="navbtn"><a href="#aboutLab" class="aboutbutton">Lab</a></li>
+        </ul>
+      </li>
+
       <li class="navbtn"><a href="resources/angus_hildreth_cv.pdf" id="resumebutton">Resume</a></li>
       <li class="navbtn"><a href="#research" id="researchbutton">Research</a></li>
 
       <li class="navbtn dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" id="labbutton" href="#">
+        <a class="dropdown-toggle" data-toggle="dropdown" id="labbutton" class="labbutton" href="#lab">
           Lab
         </a>
         <ul class="dropdown-menu">
@@ -44,9 +54,12 @@
           <li class="navbtn"><a href="#labMembers" class="labbutton">Members</a></li>
           <li class="navbtn"><a href="#labAlumni" class="labbutton">Alumni</a></li>
           <li class="navbtn"><a href="#labApply" class="labbutton">Apply</a></li>
-
         </ul>
       </li>
+
+      <li class="navbtn"><a href="http://www.google.com">Inspiration</a></li>
+      <li class="navbtn"><a href="#research" id="contactbutton">Contact</a></li>
+      
 
 
 
@@ -185,10 +198,16 @@ Over the longer-term, many research apprentices stay on in the lab.  We expect r
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="resources/labPicture.jpg" alt="Lab Picture">
+            <img src="resources/main1.png" alt="Lab Picture">
           </div>
           <div class="item">
-            <img src="resources/main2.JPG" alt="Picture1">
+            <img src="resources/main2.png" alt="Experiments">
+          </div>
+          <div class="item">
+            <img src="resources/main3.png" alt="Collating Data">
+          </div>
+          <div class="item">
+            <img src="resources/main4.png" alt="Running experiments">
           </div>
         </div>
 
@@ -204,40 +223,51 @@ Over the longer-term, many research apprentices stay on in the lab.  We expect r
 
       <div class="row">
         <div class="col-md-3"><p>Relevance</p></div>
-        <div class="col-md-3 titlepic"><img src="resources/title.png" alt=""></div>
-        <div class="col-md-3 titlepic"><img src="resources/title2.png" alt=""></div>
-        <div class="col-md-3 titlepic"><img src="resources/title3.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title2.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title3.png" alt=""></div>
       </div>
 
       <div class="row">
         <div class="col-md-3"><p>Research in Action</p></div>
-        <div class="col-md-3 titlepic"><img src="resources/title4.png" alt=""></div>
-        <div class="col-md-3 titlepic"><img src="resources/title5.png" alt=""></div>
-        <div class="col-md-3 titlepic"><img src="resources/title6.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title4.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title5.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title6.png" alt=""></div>
       </div>
 
       <div class="row">
         <div class="col-md-3"><p>Learning Environment</p></div>
-        <div class="col-md-3 titlepic"><img src="resources/title7.png" alt=""></div>
-        <div class="col-md-3 titlepic"><img src="resources/title8.png" alt=""></div>
-        <div class="col-md-3 titlepic"><img src="resources/title9.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title7.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title8.png" alt=""></div>
+        <div class="col-md-3 titlepic"><img class="gridpicture" src="resources/title9.png" alt=""></div>
       </div>
     </div>
 
     <div class="mainbody container" id="about" valign="top">
-      <div>
-        <h1>About Us</h1>
-        <h2>Who are we?</h2>
-        <h3>Biography</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus turpis vel odio aliquam fringilla. Suspendisse tincidunt velit non turpis semper fermentum. Ut lacinia rutrum turpis, quis consequat nisi. Nullam lectus erat, ornare vehicula laoreet a, malesuada non nunc. Donec nec auctor risus, nec egestas libero. Donec orci diam, malesuada ac pretium ut, dapibus non nibh. Fusce interdum convallis nisl, sed posuere arcu cursus varius. Morbi non nibh vel ipsum faucibus tincidunt a non mi. Etiam rhoncus volutpat magna, egestas sodales mi.</br></br>
+      <div id="aboutAngus">
+        <h1>About</h1>
+        <h2>Angus Hildreth</h2>
+        <p>I am a doctoral candidate in the Management of Organizations group at the UC Berkeley’s Haas School of Business. As a PhD student, my research identity has evolved into two broad areas of interest: (1) the social psychology of hierarchy, status and power, particularly the behavior, functioning and effectiveness of top teams, and (2) the moral psychology of XXXX and ethical decision making.<p>
 
-In vestibulum ornare neque, vel euismod purus sollicitudin sit amet. Nunc eu vehicula lectus. Cras rhoncus dignissim orci volutpat viverra. Aliquam nec purus eu leo adipiscing ornare. Pellentesque iaculis eu augue nec auctor. Sed iaculis in enim porttitor sodales. Nulla id imperdiet ipsum. Morbi fringilla orci eu ipsum molestie, vitae vulputate ligula blandit.</br></br>
+        <h3>Business background</h3>
+        <p> After graduating from the University of Cambridge with a Masters degree in Mathematics, I spent a decade in the corporate world, living and working in two countries for two companies and in five business units: three years as a consultant and trainee actuary at Aon’s consulting division in London writing valuation programs and business models and assessing the adequacy of company insurance arrangements,  Five years at PricewaterhouseCoopers in London as a consultant, actuary and project manager in audit support, HR consulting, and transactions services business units managing global teams of up to 50 people and advising FTSE 100 clients and private equity firms on year-end reporting, business strategy and mergers and acquisitions.</p>
 
-Curabitur id leo rutrum, tincidunt libero eget, eleifend augue. Suspendisse ultricies, erat ac interdum rutrum, nisi libero lacinia sapien, a tristique erat ligula bibendum neque. Nulla quis sapien eu lectus fringilla sollicitudin facilisis quis quam. Suspendisse quis dolor sit amet nunc elementum bibendum non eu est. Nullam tempus et dolor auctor egestas. Praesent dictum erat in nibh pretium, iaculis placerat orci varius. Phasellus vehicula massa at purus porta, non tincidunt purus accumsan.</br></br>
+        <p>After completing PwC’s pilot young leadership program (the top 5% of UK managers) in 2004, I was hired to work for PwC’s global CEO (the chief executive of a 150,000 people, $25bn global organization) in New York for two years.  My role involved managing the strategic agenda and internal communications of the global CEO and PwC’s three highest decision making bodies (the global leadership, global functional management, and network strategy teams); leading the business program for PwC’s  Annual Global Leadership Summit for its 200 most powerful executives; and driving the “Agenda for the Future,” a once in a decade strategic review of PwC’s short-term execution, medium-term positioning and longer-term sustainability priorities, which determined the future structure of the global organization, as well as multi-billion dollar spend on communication and work platforms, and the future culture for PwC’s 150 network firms.</p>
 
-Maecenas condimentum commodo justo non pharetra. Ut tincidunt at tellus convallis ultricies. Praesent at mi eu odio luctus convallis non a erat. Duis ut tempus nibh, eu tincidunt est. Integer odio tortor, molestie ac sodales ut, rutrum et nisi. Integer dapibus interdum aliquam. Vestibulum lacinia auctor erat, egestas ultrices velit dapibus eu. Nullam pharetra luctus augue, sit amet eleifend leo ultricies at. Pellentesque ultrices enim ultrices, lobortis tortor et, condimentum velit. Phasellus id porta ante. Donec consequat justo vel aliquam placerat. Vestibulum nisl lorem, eleifend sed convallis eu, dapibus a lectus. Phasellus sit amet posuere mauris. Maecenas suscipit laoreet dui a vulputate.</br></br>
+        <h3>Academic career</h3>
+        <p>It took me a little longer than most to realize that academia, and particularly social psychology was the path for me. As a freshly minted Cambridge mathematician joining an actuarial consulting firm in the 1990s, I was very much the quant-geek who saw the world’s problems as numbers and equations to be solved.  Over a decade later, I came to the realization that numbers don’t mean a whole hell of a lot unless people actually use them and persuading people to do just that is a lot harder than QED.</p>
+        <p>My interest in the ethics of XXXX stemmed from an argument I had with Max Bazerman when he visited Berkeley. Our moral philosophies over certain ethical decisions I’d made in the business world clashed but rather than fall out we started research together to discover more…</p>
+        <p>My fascination with the functioning and behavior of top teams stems from my career in the corporate world and particularly my last informative years working with executives. Admittedly I was a tad naïve when I moved to New York to start my job in the CEO’s office:  I expected to experience quintessence of effective leadership but soon discovered that behavior in the board room was far from that platonic ideal.  During my tenure with PwC’s top teams, I became a quasi-experimental psychologist, manipulating the information flow and format of executive meetings in an effort to improve meetings and get decisions made.  If only I’d collected the data!</p>
+        <p>Ultimately, my experiences working day-to-day with PwC’s executives and these global leadership teams, led me to business school, where during my MBA at Berkeley I met Adam Galinsky who introduced me to business ethics, Phil Tetlock who introduced me to research and inspired me to pursue an academic career, and Cameron Anderson who saw the potential of my research ideas and has invested greatly in them ever since.</p>
+        <p>I’ve never looked back.</p> 
+      </div>
 
-Vivamus pharetra dui eu velit consequat dictum eget vitae nisi. Sed ac lacus quis metus fringilla condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque faucibus imperdiet ipsum et tristique. Ut hendrerit ullamcorper lacus ut ornare. Duis eget leo augue. Donec laoreet dui quis posuere dictum. Cras in odio iaculis, commodo libero faucibus, eleifend mi. Sed tincidunt massa vitae dolor fermentum convallis in ac augue. Nunc sed mauris est. Curabitur ultricies ullamcorper urna, id ultricies eros volutpat nec. Nulla eu metus eu nulla vulputate lacinia ultricies in nulla. Phasellus nibh risus, sagittis non auctor quis, hendrerit ac ligula. Nam non aliquam est.</p> 
+      <div id="aboutLab">
+        <h2>The Research Lab</h2>
+        <p>We are a social psychology research lab based at the Haas School of Business at UC Berkeley. We conduct research relating to social psychology and organizational behavior with the aim of discovering new insights that can be published in top research journals.  In particular, our research focuses on the social psychology of power and the moral psychology of XXXX.</p>
+        <p>Our lab comprises undergraduate researchers and a graduate student at Haas who work with faculty both at Haas and at other US business schools.  Our lab fosters a learning environment in which our undergraduate researchers are expected to continue to learn though-out their time in the lab and to get involved in all aspects of the research process.</p>
+        <p>Since 2009, more than 50 undergraduate researchers have been part of the lab and the first couple of cohorts are now graduating and going onto successful careers in the corporate, medical and academic spheres.</p>
+        <p>For more information please visit the lab tab.</p> 
       </div>
     </div>
 

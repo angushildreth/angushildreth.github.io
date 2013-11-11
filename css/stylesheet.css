@@ -25,7 +25,9 @@ html, body{
 }
 .topbar {
 	background-color: #232323;
-	width: 100%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 5px;
 }
 .affix {
@@ -62,6 +64,9 @@ html, body{
 	margin: 0 !important;
 	height: 150px !important;
 	padding: 0px !important;
+	width: 70% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 .jumbotron:after {
 	content:"";
@@ -85,6 +90,11 @@ html, body{
 .nav-tabs>li>a:hover {
 	border-color: #ccc #ccc #ddd !important;
 }
+.nav-tabs.nav-justified {
+	width: 70% !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
 .nav-tabs.nav-justified>li>a {
 	background-color: #fff !important;
 	border-radius: 0 !important;
@@ -93,10 +103,10 @@ html, body{
 	margin: 50px;
 }
 .carousel .item {
-	height: 350px;
+	height: 400px;
 }
 .carousel img{
-	width: 100%;
+	width: 100%%;
 }
 a:hover{
 	text-decoration: none !important;

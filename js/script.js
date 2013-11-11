@@ -15,7 +15,7 @@ function show(event) {
 	}
 }
 
-function showLab(event) {
+function showDropdown(event) {
 	if ($(this).parent().hasClass("disabled")) {
 		return false;
 	}
@@ -26,14 +26,26 @@ function showLab(event) {
 		$(this).parent().addClass("disabled");
 		window.location = currenthash;
 	}
+	else if ($(this).parent().parent().parent().hasClass("disabled")) {
+		window.location = currenthash;
+	}
 	else {
 		$(".navbtn").removeClass("disabled");
 		$(".mainbody").fadeOut(100).delay(100);
-		$("#lab").show();
+		if (currenthash.substring(0,4) == "#lab") {
+			$("#lab").show();
+		}
+		else {
+			$("#about").show();
+		}
 		if ($(this).parent().hasClass("navbtn")) {
 			$(this).parent().addClass("disabled");
 		}
 	}
+}
+
+function showPictureDetails(event) {
+	$(this).style.opacity = .1;
 }
 
 function scrollToElement(selector, time, verticalOffset) {
@@ -70,6 +82,7 @@ $(document).ready(function(){
 	$("#home").addClass("disabled");
 	$("#homebutton").on("click", show);
 	$("#aboutbutton").on("click", show);
+	$("#labbutton").on("click", show);
 	$("#contactbutton").on("click", show);
 	$("#researchbutton").on("click", show);
 	if (window.location.hash == "") {
@@ -84,10 +97,14 @@ $(document).ready(function(){
 		$(window.location.hash + "button").addClass("disabled");	
 	}
 
-
-	$(".labbutton").on("click", showLab);
+	$(".dropdown").on("hover", function(){
+		$(this).toggleClass("open");
+	})
+	$(".labbutton").on("click", showDropdown);
+	$(".aboutbutton").on("click", showDropdown);
 
 	if (window.location.hash =="#resume") {
 		window.location = "resources/angus_hildreth_cv.pdf";
 	}
+	$(".gridpicture").on("hover", showPictureDetails);
 });
