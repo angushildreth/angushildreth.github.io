@@ -35,9 +35,6 @@ function showDropdown(event) {
 		if (currenthash.substring(0,4) == "#lab") {
 			$("#lab").show();
 		}
-		else {
-			$("#about").show();
-		}
 		if ($(this).parent().hasClass("navbtn")) {
 			$(this).parent().addClass("disabled");
 		}
@@ -101,7 +98,6 @@ $(document).ready(function(){
 		$(this).toggleClass("open");
 	})
 	$(".labbutton").on("click", showDropdown);
-	$(".aboutbutton").on("click", showDropdown);
 
 	if (window.location.hash =="#resume") {
 		window.location = "resources/angus_hildreth_cv.pdf";
