@@ -19,6 +19,9 @@ html, body{
 	position:relative;
 	overflow:hidden;
 }
+.caption h2 {
+	margin-top: 10px !important;
+}
 .titlepic img {
 	position:absolute !important;
 	height:auto;
@@ -74,10 +77,10 @@ html, body{
 .jumbotron:after {
 	content:"";
 	/*background: url("http://lorempixel.com/1000/200") no-repeat;*/
-	background: url("../resources/jumbotron.png") no-repeat;
+	background: url("../resources/jumbotron.jpg") no-repeat;
 	background-size: 100% auto;
 	opacity: .5;
-	top: 0;
+	top: -90;
 	left: 0;
 	bottom: 0;
 	right: 0;
