@@ -42,7 +42,7 @@ function showDropdown(event) {
 }
 
 function showPictureDetails(event) {
-	$(this).style.opacity = .1;
+	console.log("Hello!");
 }
 
 function scrollToElement(selector, time, verticalOffset) {
