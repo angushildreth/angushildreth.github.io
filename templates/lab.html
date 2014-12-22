@@ -3,12 +3,59 @@
 <head>
   <<title> Angus Hildreth | Lab</title>
   <meta name="description" content="Personal website of Angus Hildreth - Lab">
-  <?php include('../php/head.php'); ?>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <!-- Head  -->
+  <link rel="icon" href="resources/berkeleyLogo.gif" />
+  <meta name="author" content="Andrew Fang">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" media="screen" href="css/stylesheet.css">
+  <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-  <!-- Menu bar -->
-  <?php include('../php/menu.php'); ?>
+  <!-- Menu  -->
+  <div class="container-fluid" id="titleBar">
+    <div class="row">
+      <div class="col-md-11">
+        <h1 class="titleText"><span id="titleName">Angus Hildreth</span></h1>
+        <h2 class="titleText"><span id="titleDetails">University of California, Berkeley</span><h2>
+        </div>
+        <div class="col-md-1">
+          <img src="resources/berkeleyLogo.gif" class="img-responsive" id="titleLogo" alt="" />
+        </div>
+      </div>
+
+
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html" id="homeBtn">Home</a></li>
+          <li><a href="about.html" id="docBtn">About</a></li>
+          <li class="navbtn dropdown">
+            <a class="dropdown-toggle" id="labbutton" class="labbutton" href="lab.html">
+              Lab
+            </a>
+            <ul class="dropdown-menu">
+              <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
+              <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
+              <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
+              <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
+            </ul>
+          </li>
+          <li><a href="research.html" id="docBtn">Research</a></li>
+          <li><a href="vita.html" id="aboutBtn">Vita</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menu End -->
 
     <div class="containerBody container" id="lab" >
       <div id="labOverview">
@@ -38,7 +85,7 @@
 
       <div id="labValues">
         <h3>Our team values</h3>
-        <img class="img-thumbnail" src="../resources/Norms.png" alt="" />
+        <img class="img-thumbnail" src="resources/Norms.png" alt="" />
       </div>
 
       <div id="labMembers">
@@ -46,7 +93,7 @@
 
         <div class="row thumbnail">
           <div class="col-md-3">
-            <img src="../resources/joy_chen.jpg" alt="Joy Chen" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/joy_chen.jpg" alt="Joy Chen" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Joy Chen</h3>
@@ -56,7 +103,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/tommy_shi.png" alt="Tommy Shi" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/tommy_shi.png" alt="Tommy Shi" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Tommy Shi</h3>
@@ -67,7 +114,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/arushi_saxena.png" alt="Arushi Saxena" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/arushi_saxena.png" alt="Arushi Saxena" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Arushi Saxena</h3>
@@ -77,7 +124,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/collin_gallagher.png" alt="Collin Gallagher" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/collin_gallagher.png" alt="Collin Gallagher" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Collin Gallagher</h3>
@@ -87,7 +134,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/ashley_nguyen.png" alt="Ashley Nguyen" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/ashley_nguyen.png" alt="Ashley Nguyen" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Ashley Nguyen</h3>
@@ -97,7 +144,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/neel_patel.png" alt="Neel Patel" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/neel_patel.png" alt="Neel Patel" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Neel Patel</h3>
@@ -107,7 +154,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/andrew_fang.png" alt="Andrew Fang" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/andrew_fang.png" alt="Andrew Fang" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Andrew Fang</h3>
@@ -123,7 +170,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/melisa_bintoro.png" alt="Melisa Bintoro" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/melisa_bintoro.png" alt="Melisa Bintoro" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Melisa Bintoro</h3>
@@ -134,7 +181,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/erika_oblea.png" alt="Erika Oblea" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/erika_oblea.png" alt="Erika Oblea" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Erika Oblea</h3>
@@ -145,7 +192,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/eric_anderson.png" alt="Eric Anderson" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/eric_anderson.png" alt="Eric Anderson" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Eric Anderson</h3>
@@ -156,7 +203,7 @@
 
         <div class="thumbnail row">
           <div class="col-md-3">
-            <img src="../resources/kapil_gururangan.png" alt="Kapil Gururangan" class="img-rounded img-responsive profilePicLab">
+            <img src="resources/kapil_gururangan.png" alt="Kapil Gururangan" class="img-rounded img-responsive profilePicLab">
           </div>
           <div class="col-md-8">
             <h3>Kapil Gururangan</h3>
