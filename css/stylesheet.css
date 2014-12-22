@@ -1,154 +1,86 @@
+/* General */
 html, body{
 	margin:0;
 	padding:0;
+	background: #003262 !important;
 }
-.container p{
-	font-size:15;
+
+h1 {
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
-.title {
-	width: 70% !important;
-	height: 150px;
+h2 {
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
-.title h1{
-	margin-top:35px !important;
-	text-decoration: underline;
+h3 {
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
-.titlepic{
-	width:200px;
-	height:175px;
-	display:block;
-	position:relative;
-	overflow:hidden;
+
+/* Title Bar and Nav bar, stuff in menu.php*/
+#titleBar {
+	background: #003262;
+	padding: 30px 50px 30px 100px;
 }
-.caption h2 {
-	margin-top: 10px !important;
+#titleName{
+	font-weight: 300;
+	font-size: 25px;
+	font-weight: 300;
 }
-.titlepic img {
-	position:absolute !important;
-	height:auto;
-	top:-10;
-	left:10;
-	max-height:175px;
+#titleDetails{
+	border-left: 1px solid #d8d8d8;
+	color: #d8d8d8;
+	padding: 5px;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-weight: 200;
+	font-size: 25px
 }
-.topbar {
-	background-color: #aaa;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	height: 1px;
+.titleText {
+	color: #fff !important;
+	display: inline-block !important;
+	vertical-align: middle;
 }
-.affix {
-	position: fixed;
-	top: 0px;
+#titleLogo {
+	display: inline-block !important;
+	vertical-align: middle;
+	max-height: 100px;
+}
+
+.navbar {
+	border: 0px !important;
+	padding-right: 50px;
+}
+.navbar-default {
+	border-bottom: 30px solid #003262 !important;
+	border-radius: 0px !important;
+}
+
+/* For the home page */
+#profilePic {
 	width: 100%;
-	z-index:100;
+	max-width: 300px;
 }
-.affix-top {
-	position: absolute;
-}
-.mainbody {
-	width: 60% !important;
-	margin-top: 50px;
+#contact {
+	background: #f8f8f8;
+	padding: 50px 30px 50px 30px;
 	margin-bottom: 50px;
 }
-.mainbodyHome {
-	width: 1050px !important;
+#address p {
+	margin: 0;
 }
-.row {
-	width: 920px !important;
-	margin-right:auto !important;
-	margin-left:auto !important;
+#homeIntro {
+	background: #f8f8f8;
+	padding: 50px;
+	text-align: justify;
 }
-.row .col-md-3 {
-	padding-left:0px !important;
+
+/* For the lab page */
+.profilePicLab {zxxz
+	vertical-align: middle;
 }
-.mainbody h1 {
-	margin-top:50px;
-}
-.jumbotron{
-	position: relative !important;
-	background: none !important;
-	margin: 0 !important;
-	height: 175px !important;
-	padding: 0px !important;
-	width: 70% !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-}
-.jumbotron:after {
-	content:"";
-	/*background: url("http://lorempixel.com/1000/200") no-repeat;*/
-	background: url("../resources/jumbotron.jpg") no-repeat;
-	background-size: 100% auto;
-	opacity: .5;
-	top: -90;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
- }
- .dropdown-menu>.disabled>a:hover,
- .dropdown-menu>.disabled>a:focus,
-.nav > li.disabled>a:hover,
-.nav > li.disabled>a:focus {
-	cursor: default !important;
-}
-.nav-tabs>li>a:hover {
-	border-color: #ccc #ccc #ddd !important;
-}
-.nav-tabs.nav-justified {
-	width: 70% !important;
-	margin-left:auto !important;
-	margin-right:auto !important;
-}
-.nav-tabs.nav-justified>li>a {
-	background-color: #fff !important;
-	border-radius: 0 !important;
-}
-.carousel {
-	margin: 50px;
-}
-.carousel .item {
-	height: 400px;
-}
-.carousel img{
-	width: 100%%;
-}
-a:hover{
-	text-decoration: none !important;
-}
-.dropdown-menu>li>a{
-	padding: 8px 20px !important;
-}
-.blackcaret{
-	border-top-color: #000 !important;
-	border-bottom-color: #000 !important;
-}
-#lab h2{
-	margin-top: 50px;
-}
-.thumbnail.right-caption > img {
-    float: left;
-    margin-right: 9px;
-}
-.thumbnail.right-caption {
-    float: left;
-}
-.thumbnail.right-caption > .caption {
-    padding: 4px;
-}
-.profilepic {
-	height: 300px !important;
-}
-.facultyblock {
-	padding: 20px !important;
-}
-.facultyblock h3{
-	margin: 0px !important;
-	padding-bottom: 10px !important;
-}
-.facultyblock p, a{
-	margin: 0px !important;
-	padding-left: 25px;
+
+/* For the About + Research + Lab pages */
+.containerBody {
+	background: #f8f8f8;
+	padding: 50px 100px 50px 100px !important;
+	margin-bottom: 50px;
 }
