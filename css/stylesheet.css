@@ -44,7 +44,11 @@ h3 {
 	vertical-align: middle;
 	max-height: 100px;
 }
-
+#haasLogo {
+	display: inline-block !important;
+	vertical-align: middle;
+	max-height: 100px;
+}
 .navbar {
 	border: 0px !important;
 	padding-right: 50px;
