@@ -23,9 +23,10 @@
   
 <div class="container-fluid" id="titleBar">
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-md-10"><a href="index.html">
     <h1 class="titleText"><span id="titleName">Angus Hildreth</span></h1>
     <h2 class="titleText"><span id="titleDetails">University of California, Berkeley</span><h2>
+    </a>
   </div>
   <div class="col-md-2">
     <img src="resources/haasLogo.png" class="img-responsive" id="haasLogo" alt="" />
@@ -38,53 +39,63 @@
 <nav class="navbar navbar-default" role="navigation">
 <div class="container-fluid">
   <ul class="nav navbar-nav navbar-right">
-    <li><a href="index.html" id="homeBtn">Home</a></li>
-    <li><a href="about.html" id="docBtn">About</a></li>
+    <li><a href="about.html" class="mainNavBtn navbtn" id="aboutbutton">About</a></li>
+
     <li class="navbtn dropdown">
-    <a class="dropdown-toggle" id="labbutton" class="labbutton" href="lab.html">
-    Lab
-    </a>
-    <ul class="dropdown-menu">
-    <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
-    <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
-    <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
-    <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
-    </ul>
+      <a class="dropdown-toggle mainNavBtn navbtn" id="researchbutton" href="research.html">
+      Research
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="research.html#power">Power</a></li>
+      <li class="navbtn"><a href="research.html#loyalty">Loyalty</a></li>
+      <li class="navbtn"><a href="research.html#groups">Groups</a></li>
+      </ul>
     </li>
-    <li><a href="research.html" id="docBtn">Research</a></li>
-    <li><a href="vita.html" id="aboutBtn">Vita</a></li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="publicationsbutton" href="publications.html">
+      Publications
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="publications.html#collaborators" class="labbutton">Collaborators</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="labbutton" class="labbutton" href="lab.html">
+      Lab
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
+      <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
+      <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
+      <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="vitabutton" href="vita.html">
+      Vita 
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="vita.html#cv">Curriculum Vitae</a></li>
+      <li class="navbtn"><a href="vita.html#teaching">Teaching Statement</a></li>
+      <li class="navbtn"><a href="vita.html#research">Research Statement</a></li>
+      </ul>
+    </li>
+
   </ul>
 </div>
 </nav>
 
-  <div class="container">
+  <div class="container containerBody" align="center">
     <div class="row">
-      <div class="col-md-3" id="contact">
-        <img class="img-responsive" id="profilePic" src="resources/angus_hildreth.jpg" alt="" />
-        <h3>Contact</h3>
-        <p>angus@berkeley.edu</p>
-        <span id="address">
-          <p>Walter A. Haas School of Business</p>
-          <p>545 Student Services #1900</p>
-          <p>2220 Piedmont Avenue,</p>
-          <p>University of California, Berkeley</p>
-          <p>Berkeley, CA 94720-1900</p>
-        </span>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-8" id="homeIntro">
-        <p>
-          Angus Hildreth is a doctoral candidate in the Management of Organizations group at the University of California, Berkeley - Walter A. Haas School of Business. His research focuses on the effects of power and status on leadership effectiveness and on the ethical consequences of loyalty in group contexts.
-        </p>
-        <ul>
-        <li>Click <a href="about.html">here</a> to find out more about Angus' background or <a href="vita.html">here</a> to access a copy of his vita.</li>
-        <li>Click <a href="lab.html">here</a> to find out more about his research lab and how to join.</li>
-        <li>Click <a href="research.html">here</a> to find out more about Angus' research, his published papers, the collaborators he works with and current work in progress.</li>
-        </ul>
-        <p>Thanks for visiting this site!</p>
-        </p>
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <img class="img img-responsive" src="resources/splash.png" />
       </div>
     </div>
+    <h3>Living in dysfunctional groups</h3>
   </div>
 
 

@@ -24,9 +24,10 @@
     
 <div class="container-fluid" id="titleBar">
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-md-10"><a href="index.html">
     <h1 class="titleText"><span id="titleName">Angus Hildreth</span></h1>
     <h2 class="titleText"><span id="titleDetails">University of California, Berkeley</span><h2>
+    </a>
   </div>
   <div class="col-md-2">
     <img src="resources/haasLogo.png" class="img-responsive" id="haasLogo" alt="" />
@@ -39,28 +40,68 @@
 <nav class="navbar navbar-default" role="navigation">
 <div class="container-fluid">
   <ul class="nav navbar-nav navbar-right">
-    <li><a href="index.html" id="homeBtn">Home</a></li>
-    <li><a href="about.html" id="docBtn">About</a></li>
+    <li><a href="about.html" class="mainNavBtn navbtn" id="aboutbutton">About</a></li>
+
     <li class="navbtn dropdown">
-    <a class="dropdown-toggle" id="labbutton" class="labbutton" href="lab.html">
-    Lab
-    </a>
-    <ul class="dropdown-menu">
-    <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
-    <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
-    <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
-    <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
-    </ul>
+      <a class="dropdown-toggle mainNavBtn navbtn" id="researchbutton" href="research.html">
+      Research
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="research.html#power">Power</a></li>
+      <li class="navbtn"><a href="research.html#loyalty">Loyalty</a></li>
+      <li class="navbtn"><a href="research.html#groups">Groups</a></li>
+      </ul>
     </li>
-    <li><a href="research.html" id="docBtn">Research</a></li>
-    <li><a href="vita.html" id="aboutBtn">Vita</a></li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="publicationsbutton" href="publications.html">
+      Publications
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="publications.html#collaborators" class="labbutton">Collaborators</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="labbutton" class="labbutton" href="lab.html">
+      Lab
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
+      <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
+      <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
+      <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="vitabutton" href="vita.html">
+      Vita 
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="vita.html#cv">Curriculum Vitae</a></li>
+      <li class="navbtn"><a href="vita.html#teaching">Teaching Statement</a></li>
+      <li class="navbtn"><a href="vita.html#research">Research Statement</a></li>
+      </ul>
+    </li>
+
   </ul>
 </div>
 </nav>
 
-  <div class="container containerBody" id="research">
+  <div class="container containerBody" id="cv">
     <h3>Curriculum Vitae</h3>
     <object width="100%" height="100%" data="resources/angus_hildreth_cv.pdf"></object>
+  </div>
 
+  <div class="container containerBody" id="teaching">
+    <h3>Teaching Statement</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus dolor tortor, vel pharetra enim sagittis vel. Vivamus vel elit non nisl consectetur dignissim. Phasellus eu scelerisque purus. Maecenas nibh elit, scelerisque ac orci ut, aliquam volutpat orci. Aenean finibus risus ac vestibulum vestibulum. Fusce blandit nulla nibh. Suspendisse euismod neque sed dui viverra, at lacinia ligula scelerisque. Donec accumsan nibh ut urna porta feugiat. Nulla pretium tincidunt maximus. Vestibulum vestibulum lorem id faucibus interdum. Quisque volutpat augue eget accumsan pharetra. Cras eu mauris sem. Sed posuere ante porta est consectetur rutrum.</p>
+   </div>
+
+  <div class="container containerBody" id="research">
+    <h3>Research Statement</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus dolor tortor, vel pharetra enim sagittis vel. Vivamus vel elit non nisl consectetur dignissim. Phasellus eu scelerisque purus. Maecenas nibh elit, scelerisque ac orci ut, aliquam volutpat orci. Aenean finibus risus ac vestibulum vestibulum. Fusce blandit nulla nibh. Suspendisse euismod neque sed dui viverra, at lacinia ligula scelerisque. Donec accumsan nibh ut urna porta feugiat. Nulla pretium tincidunt maximus. Vestibulum vestibulum lorem id faucibus interdum. Quisque volutpat augue eget accumsan pharetra. Cras eu mauris sem. Sed posuere ante porta est consectetur rutrum.</p>
+   </div>
 </body>
 </html>

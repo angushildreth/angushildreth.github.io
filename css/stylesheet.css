@@ -5,13 +5,7 @@ html, body{
 	background: #003262 !important;
 }
 
-h1 {
-	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
-}
-h2 {
-	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
-}
-h3 {
+h1,h2,h3,h4 {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
 
@@ -58,7 +52,7 @@ h3 {
 	border-radius: 0px !important;
 }
 
-/* For the home page */
+/* For the about page */
 #profilePic {
 	width: 100%;
 	max-width: 300px;
@@ -76,10 +70,36 @@ h3 {
 	padding: 50px;
 	text-align: justify;
 }
+.aboutLink {
+  font-weight: 700;
+  color: #000;
+}
+.aboutLink:hover {
+  color: #003262;
+  text-decoration: none;
+}
 
 /* For the lab page */
-.profilePicLab {zxxz
+.profilePicLab {
 	vertical-align: middle;
+}
+
+/* For the Research page */
+.bold {
+  font-weight: 700;
+}
+.light {
+  font-weight: 400;
+}
+.h3withPadBtm {
+  padding-bottom: 20px;
+}
+.h4noTop {
+  margin-top: 0px;
+}
+.groupImg {
+  width: 75%;
+  margin-bottom: 20px;
 }
 
 /* For the About + Research + Lab pages */
@@ -87,4 +107,8 @@ h3 {
 	background: #f8f8f8;
 	padding: 50px 100px 50px 100px !important;
 	margin-bottom: 50px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  font-weight: 700 !important;
+  background-color: #f8f8f8 !important;
 }

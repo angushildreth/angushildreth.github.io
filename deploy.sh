@@ -53,10 +53,21 @@ s/REPLACEMENU//g
 r templates/menu.html
 }' vita2.html > vita.html
 
+sed '/REPLACEHEAD/{
+s/REPLACEHEAD//g
+r templates/head.html
+}' templates/publications.html > publications2.html
+
+sed '/REPLACEMENU/{
+s/REPLACEMENU//g
+r templates/menu.html
+}' publications2.html > publications.html
+
 # cleanup
 rm -rf about2.html
 rm -rf index2.html
 rm -rf lab2.html
 rm -rf research2.html
 rm -rf vita2.html
+rm -rf publications2.html
 rm -rf .DS_STORE

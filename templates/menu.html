@@ -1,8 +1,9 @@
 <div class="container-fluid" id="titleBar">
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-md-10"><a href="index.html">
     <h1 class="titleText"><span id="titleName">Angus Hildreth</span></h1>
     <h2 class="titleText"><span id="titleDetails">University of California, Berkeley</span><h2>
+    </a>
   </div>
   <div class="col-md-2">
     <img src="resources/haasLogo.png" class="img-responsive" id="haasLogo" alt="" />
@@ -15,21 +16,51 @@
 <nav class="navbar navbar-default" role="navigation">
 <div class="container-fluid">
   <ul class="nav navbar-nav navbar-right">
-    <li><a href="index.html" id="homeBtn">Home</a></li>
-    <li><a href="about.html" id="docBtn">About</a></li>
+    <li><a href="about.html" class="mainNavBtn navbtn" id="aboutbutton">About</a></li>
+
     <li class="navbtn dropdown">
-    <a class="dropdown-toggle" id="labbutton" class="labbutton" href="lab.html">
-    Lab
-    </a>
-    <ul class="dropdown-menu">
-    <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
-    <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
-    <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
-    <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
-    </ul>
+      <a class="dropdown-toggle mainNavBtn navbtn" id="researchbutton" href="research.html">
+      Research
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="research.html#power">Power</a></li>
+      <li class="navbtn"><a href="research.html#loyalty">Loyalty</a></li>
+      <li class="navbtn"><a href="research.html#groups">Groups</a></li>
+      </ul>
     </li>
-    <li><a href="research.html" id="docBtn">Research</a></li>
-    <li><a href="vita.html" id="aboutBtn">Vita</a></li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="publicationsbutton" href="publications.html">
+      Publications
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="publications.html#collaborators" class="labbutton">Collaborators</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="labbutton" class="labbutton" href="lab.html">
+      Lab
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
+      <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
+      <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
+      <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="vitabutton" href="vita.html">
+      Vita 
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="vita.html#cv">Curriculum Vitae</a></li>
+      <li class="navbtn"><a href="vita.html#teaching">Teaching Statement</a></li>
+      <li class="navbtn"><a href="vita.html#research">Research Statement</a></li>
+      </ul>
+    </li>
+
   </ul>
 </div>
 </nav>

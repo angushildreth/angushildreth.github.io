@@ -24,9 +24,10 @@
   
 <div class="container-fluid" id="titleBar">
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-md-10"><a href="index.html">
     <h1 class="titleText"><span id="titleName">Angus Hildreth</span></h1>
     <h2 class="titleText"><span id="titleDetails">University of California, Berkeley</span><h2>
+    </a>
   </div>
   <div class="col-md-2">
     <img src="resources/haasLogo.png" class="img-responsive" id="haasLogo" alt="" />
@@ -39,54 +40,135 @@
 <nav class="navbar navbar-default" role="navigation">
 <div class="container-fluid">
   <ul class="nav navbar-nav navbar-right">
-    <li><a href="index.html" id="homeBtn">Home</a></li>
-    <li><a href="about.html" id="docBtn">About</a></li>
+    <li><a href="about.html" class="mainNavBtn navbtn" id="aboutbutton">About</a></li>
+
     <li class="navbtn dropdown">
-    <a class="dropdown-toggle" id="labbutton" class="labbutton" href="lab.html">
-    Lab
-    </a>
-    <ul class="dropdown-menu">
-    <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
-    <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
-    <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
-    <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
-    </ul>
+      <a class="dropdown-toggle mainNavBtn navbtn" id="researchbutton" href="research.html">
+      Research
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="research.html#power">Power</a></li>
+      <li class="navbtn"><a href="research.html#loyalty">Loyalty</a></li>
+      <li class="navbtn"><a href="research.html#groups">Groups</a></li>
+      </ul>
     </li>
-    <li><a href="research.html" id="docBtn">Research</a></li>
-    <li><a href="vita.html" id="aboutBtn">Vita</a></li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="publicationsbutton" href="publications.html">
+      Publications
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="publications.html#collaborators" class="labbutton">Collaborators</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="labbutton" class="labbutton" href="lab.html">
+      Lab
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="lab.html#labOverview" class="labbutton">Overview</a></li>
+      <li class="navbtn"><a href="lab.html#labApply" class="labbutton">Apply</a></li>
+      <li class="navbtn"><a href="lab.html#labMembers" class="labbutton">Team</a></li>
+      <li class="navbtn"><a href="lab.html#labAlumni" class="labbutton">Alumni</a></li>
+      </ul>
+    </li>
+
+    <li class="navbtn dropdown">
+      <a class="dropdown-toggle mainNavBtn navbtn" id="vitabutton" href="vita.html">
+      Vita 
+      </a>
+      <ul class="dropdown-menu">
+      <li class="navbtn"><a href="vita.html#cv">Curriculum Vitae</a></li>
+      <li class="navbtn"><a href="vita.html#teaching">Teaching Statement</a></li>
+      <li class="navbtn"><a href="vita.html#research">Research Statement</a></li>
+      </ul>
+    </li>
+
   </ul>
 </div>
 </nav>
 
   <div class="container containerBody" id="research">
-    <h3>Research</h3>
-    <p>My research focuses on the effects that leadership and loyalty have on relationships and behavior in organizational contexts.</p>
-    <ul>
-      <li>In the area of leadership, power and status (i.e., the vertical axis of the interpersonal circumplex) I build on the experiences and insights I gained working with powerful executives in the corporate world. I investigate:</li>
-      <ul>
-        <li>The effect that power has on leaders, on their interactions with each other and on their performance in top teams, <a href="#">[Link]</a></li>
-        <li>The effect that leaders' power and influence styles have on the cultures they create in their organizations, <a href="#">[Link]</a></li>
-        <li>The effect that status has more broadly on an individual's psychological well-being. <a href="#">[Link]</a></li>
-      </ul>
-    </ul>
+    <h2>Research</h2>
+    <p>My research focuses on the dysfunctionality of groups and examines the effects of power and loyalty on group members’ collaborative and ethical behavior.</p>
+    <div class="row">
+      <div class="col-md-6" align="center">
+        <img src="resources/power.png" class="img img-responsive"/>
+        <h4>Leadership, Power and Status</h4>
+      </div>
+      <div class="col-md-6" align="center">
+        <img src="resources/loyalty.png" class="img img-responsive"/>
+        <h4>Loyalty and Morality</h4>
+      </div>
+    </div>
+  </div>
 
-    <ul>
-      <li>In the area of loyalty (i.e., the horizontal axis of the interpersonal circumplex) I build on the insights of moral psychology to investigate:</li>
-      <ul>
-        <li>The effects that loyalty has on individual ethical behavior <a href="#">[Link]</a></li>
-        <li>The expectations that loyalty gives rise to including and their effects of thoughts, feelings and behavior.  E.g., expectations trust and trustworthiness, <a href="#">[Link]</a></li>
-      </ul>
-    </ul>
-    <p>My research is biased towards measuring actual behavior. I use both laboratory experiments to infer causality and field studies to demonstrate the generalizability of the effects I find in real-world contexts.</p>
+  <div class="container containerBody" id="power">
+    <h3 class="h3withPadBtm"><span class="bold">Research</span>: <span class="light">Leadership, power and status in groups and top teams</span></h3>
+    <div class="row">
+      <div class="col-md-6" align="center">
+        <img src="resources/power.png" class="img img-responsive"/>
+        <h4>Leadership, Power and Status</h4>
+      </div>
+      <div class="col-md-6">
+        <h4 class="h4noTop">Key Questions</h4>
+        <ul>
+          <li>Why do top teams perform poorly and how can performance issues be mitigated?</li>
+          <li>How does a leader’s power and influence style affect the performance of their groups and the cultures they create?</li>
+          <li>What is the nature of social status? And, how does it affect social functioning and well-being in groups?</li>
+        </ul>
+        <h4>Relevant Research</h4>
+        <ul>
+          <li>Anderson, C., <span class="bold">Hildreth, J.A.D.</span>, & Howland, L. (2015) Do people possess a fundamental desire for status? A review of the empirical literature. Psychological Bulletin</li>
+          <li><span class="bold">Hildreth, J.A.D.</span>, Anderson, C. Failure at the top: How power undermines collaborative performance. Journal of Personality and Social Psychology. (2nd Revised and Resubmitted)</li>
+          <li>Chatman, J.A., <span class="bold">Hildreth J.A.D.</span> & Anderson, C. Do as I say not as I do: How leaders’ interpersonal style and power influence organizational culture.</lli>
+          <li>Anderson, C. & <span class="bold">Hildreth, J.A.D.</span> Status and Subjective Wellbeing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    <p>I also love to collaborate with other inspiring researchers on one-off exciting projects:</p>
-    <ul>
-      <li>With Professors Will Self, Barb Mellers, Greg Mitchell and Phillip Tetlock, we investigated the effects of voice on shared circumstances <a href="#">[Link]</a></li>
-      <li>With Professors Don Moore and Steve Blader, we investigated how accountability affects implicit biases <a href="#">[Link]</a></li>
-    </ul>
 
-    <a href="#">[Dissertation prospectus]</a>
-    <a href="#">[Research statement]</a>
+  <div class="container containerBody" id="loyalty">
+    <h3 class="h3withPadBtm"><span class="bold">Research</span>: <span class="light">Loyalty, ethics, morality, and trust in group life</span></h3>
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="h4noTop">Key Questions</h4>
+        <ul>
+        <li>What is the nature of loyalty? And how does it drive individual behavior in groups?</li>
+        <li>What are the effects of loyalty on expectations and acts of trust and trustworthiness?</li>
+        <li>Does loyalty corrupt?</li>
+        </ul>
+        <h4>Relevant Research</h4>
+        <ul>
+          <li><span class="bold">Hildreth, J.A.D.</span>, Gino, F., & Bazerman M. Blind loyalty? How group loyalty makes us see evil. Organizational Behavior and Human Decision Processes</li>
+          <li><span class="bold">Hildreth, J.A.D</span> & Anderson, C. The Morality of Loyalty: How loyalty shapes ethical behavior.
+
+        </ul>
+      </div>
+      <div class="col-md-6" align="center">
+        <img src="resources/loyalty.png" class="img img-responsive"/>
+        <h4>Loyalty and Morality</h4>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container containerBody" id="groups">
+    <h3 class="h3withPadBtm"><span class="bold">Research</span>: <span class="light">Group Behavior</span></h3>
+    <div class="row">
+      <div class="col-md-6">
+        <p>My research focuses on <span class="bold">group</span> interactions and measures <span class="bold">actual behavior</span> whenever possible.</p>
+        <p>We bring <span class="bold">executives</span> and graduate students into the lab and <span class="bold">video-tape</span> group interactions.</p>
+        <p>We measure behaviors such as Agreement, Cheating, Creativity and Performance.</p>
+      </div>
+      <div class="col-md-6" align="center">
+        <img class="groupimg" src="resources/groups1.png" class="img img-responsive"/>
+        <img class="groupimg" src="resources/groups2.png" class="img img-responsive"/>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
