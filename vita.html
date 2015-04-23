@@ -11,10 +11,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <link rel="stylesheet" media="screen" href="css/stylesheet.css">
-<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="bootstrap/css/bootstrap.min.css">
 <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 </head>
@@ -23,13 +23,13 @@
     <!-- Menu goes here -->
     
 <div class="container-fluid" id="titleBar">
-<div class="row">
-  <div class="col-md-10"><a href="index.html">
+<div class="flexHeader">
+  <div id="leftHeader"><a href="index.html">
     <h1 class="titleText"><span id="titleName">Angus Hildreth</span></h1>
-    <h2 class="titleText"><span id="titleDetails">University of California, Berkeley</span><h2>
+    <h2 class="titleText"><span id="titleDetails">Doctoral Candidate</span><h2>
     </a>
   </div>
-  <div class="col-md-2">
+  <div id="rightHeader" id="logoCol">
     <img src="resources/haasLogo.png" class="img-responsive" id="haasLogo" alt="" />
   </div>
 </div>
@@ -38,8 +38,20 @@
 </div>
 
 <nav class="navbar navbar-default" role="navigation">
-<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
+
+
+<div class="collapse navbar-collapse" id="navbar-collapse">
   <ul class="nav navbar-nav navbar-right">
+    <li><a href="index.html" class="mainNavBtn navbtn" id="homebutton">Home</a></li>
     <li><a href="about.html" class="mainNavBtn navbtn" id="aboutbutton">About</a></li>
 
     <li class="navbtn dropdown">
@@ -79,9 +91,9 @@
       Vita 
       </a>
       <ul class="dropdown-menu">
-      <li class="navbtn"><a href="vita.html#cv">Curriculum Vitae</a></li>
-      <li class="navbtn"><a href="vita.html#teaching">Teaching Statement</a></li>
-      <li class="navbtn"><a href="vita.html#research">Research Statement</a></li>
+      <li class="navbtn"><a href="vita.html#cv">CV</a></li>
+      <li class="navbtn"><a href="vita.html#teaching">Teaching</a></li>
+      <li class="navbtn"><a href="vita.html#research">Research</a></li>
       </ul>
     </li>
 
@@ -89,7 +101,7 @@
 </div>
 </nav>
 
-  <div class="container containerBody" id="cv">
+  <div class="container containerBody firstContainer" id="cv">
     <h3>Curriculum Vitae</h3>
     <object width="100%" height="100%" data="resources/angus_hildreth_cv.pdf"></object>
   </div>
@@ -103,5 +115,14 @@
     <h3>Research Statement</h3>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus dolor tortor, vel pharetra enim sagittis vel. Vivamus vel elit non nisl consectetur dignissim. Phasellus eu scelerisque purus. Maecenas nibh elit, scelerisque ac orci ut, aliquam volutpat orci. Aenean finibus risus ac vestibulum vestibulum. Fusce blandit nulla nibh. Suspendisse euismod neque sed dui viverra, at lacinia ligula scelerisque. Donec accumsan nibh ut urna porta feugiat. Nulla pretium tincidunt maximus. Vestibulum vestibulum lorem id faucibus interdum. Quisque volutpat augue eget accumsan pharetra. Cras eu mauris sem. Sed posuere ante porta est consectetur rutrum.</p>
    </div>
+
+     <!-- Foot goes here -->
+       
+<footer align="center">
+  angus@berkeley.edu | angushildreth.com | <a class="noA noAGray" href="http://www.linkedin.com/in/johnangushildreth">LinkedIn</a>
+</footer>
+
+
+
 </body>
 </html>
