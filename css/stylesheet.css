@@ -2,40 +2,47 @@
 html, body{
 	margin:0;
 	padding:0;
-	background: #003262 !important;
+	background: #fff !important;
 }
 
-h1 {
+h1,h2,h3,h4 {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
-h2 {
-	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+
+.noA {
+  color: #003262;
 }
-h3 {
-	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+.noA:hover {
+  color: #003262;
+  text-decoration: none;
+}
+.noAGray {
+  color: #afafaf;
+}
+.dropdown-menu {
+  min-width: 50px !important;
 }
 
 /* Title Bar and Nav bar, stuff in menu.php*/
 #titleBar {
-	background: #003262;
+	background: #fff;
 	padding: 30px 50px 30px 100px;
 }
 #titleName{
-	font-weight: 300;
 	font-size: 25px;
-	font-weight: 300;
+	font-weight: 500;
 }
 #titleDetails{
 	border-left: 1px solid #d8d8d8;
-	color: #d8d8d8;
+	color: #003263;
 	padding: 5px;
 	margin-left: 10px;
 	padding-left: 10px;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 25px
 }
 .titleText {
-	color: #fff !important;
+	color: #003262 !important;
 	display: inline-block !important;
 	vertical-align: middle;
 }
@@ -44,23 +51,87 @@ h3 {
 	vertical-align: middle;
 	max-height: 100px;
 }
-
+#haasLogo {
+	display: inline-block !important;
+	vertical-align: middle;
+	max-height: 70px;
+}
 .navbar {
+  background: #003A70 !important;
 	border: 0px !important;
 	padding-right: 50px;
 }
 .navbar-default {
-	border-bottom: 30px solid #003262 !important;
+	border-bottom: 30px solid #fff !important;
 	border-radius: 0px !important;
 }
-
-/* For the home page */
+.navbar-fixed-top {
+  border-bottom: 0px solid black !important;
+}
+.navbar-nav>li>a {
+  color: #fff !important;
+}
+.dropdown-menu {
+  background-color: #fff !important;
+}
+.navbar-nav>.open>a,
+.navbar-nav>.open>a:hover {
+  background-color: #fff !important;
+  color: #003a70 !important;
+}
+.navbtn>a:hover {
+  background-color: #fff !important;
+  color: #003a70 !important;
+}
+.navbtn>a:hover {
+  background-color: #003a70 !important;
+  color: #fff !important;
+}
+.navbar-nav>.active>a {
+  color: #003a70 !important;
+  background-color: #fff !important;
+}
+.flexHeader {
+  display: flex;
+  justify-content: space-between;
+}
+/* For the index page */
+.carouselContainer {
+  width: 800px !important;
+  margin-bottom: 20px !important;
+  padding: 0px 100px !important;
+}
+.imgWrapper {
+  height: 390px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img{
+}
+.carousel-caption{
+  background: rgba(0,0,0,.7) !important;
+  right: 0 !important;
+  left: 0 !important;
+  padding-bottom: 50px;
+  bottom: 0 !important;
+}
+.carousel-indicators {
+  bottom: 0 !important;
+}
+.paddedHr {
+  margin-left: 150px;
+  margin-right: 150px;
+  border-color: #003A70;
+}
+/* For the about page */
 #profilePic {
 	width: 100%;
 	max-width: 300px;
 }
 #contact {
-	background: #f8f8f8;
+	background: #FFF;
 	padding: 50px 30px 50px 30px;
 	margin-bottom: 50px;
 }
@@ -68,19 +139,86 @@ h3 {
 	margin: 0;
 }
 #homeIntro {
-	background: #f8f8f8;
+	background: #fff;
 	padding: 50px;
 	text-align: justify;
 }
+.aboutLink {
+  font-weight: 700;
+  color: #000;
+}
+.aboutLink:hover {
+  color: #003262;
+  text-decoration: none;
+}
 
+/* For the publications page */
+.circle {
+  background: #fff;
+  color: #003262;
+  width: 135px;
+  height: 135px;
+  line-height: 135px;
+  border-radius: 100px;
+  margin: 15px;
+  border: 1px solid #003262;
+}
+.circle:hover {
+  background: #003262;
+  color: #fff;
+}
 /* For the lab page */
-.profilePicLab {zxxz
+.profilePicLab {
 	vertical-align: middle;
+}
+
+/* For the Research page */
+.bold {
+  font-weight: 700;
+}
+.light {
+  font-weight: 400;
+}
+.h3withPadBtm {
+  padding-bottom: 20px;
+}
+.h4noTop {
+  margin-top: 0px;
+}
+.groupImg {
+  width: 75%;
+  margin-bottom: 20px;
 }
 
 /* For the About + Research + Lab pages */
 .containerBody {
-	background: #f8f8f8;
-	padding: 50px 100px 50px 100px !important;
-	margin-bottom: 50px;
+	background: #FFF;
+	padding: 15px 100px 15px 100px !important;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.marginBottom {
+  margin-bottom: 50px;
+}
+footer {
+  font-size: 12px;
+  color: #afafaf;
+  padding-bottom: 10px;
+}
+
+#haasLogoMobile {
+  max-height: 70px;
+  display: none;
+}
+
+@media (max-width: 720px) { 
+  #titleDetails {
+    display: none;
+  }
+}
+@media (max-width: 1125px) { 
+  #logoCol {
+    display: absolute;
+    float: right;
+  }
 }
